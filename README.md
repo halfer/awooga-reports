@@ -49,11 +49,16 @@ files found with a `.json` extension are assumed to be a report. Anything that p
 will be inserted (or updated) in the central database, and anything that fails validation will
 be listed on a public validation report (which can be consulted to aid repair).
 
+Resources can have a title associated with them, which will be plain text. Resources can have a
+one or more issue codes associated with them, selected from a list of valid codes. Both resources
+and issues can have descriptions attached to them, both of which will be in markdown format.
+
 Since the format may change over time, each JSON file will contain a format version number, to
 allow for future expansion.
 
 Other than the extension, there is no proposed standard for report filenames or directories - this
-is at the whim of the author. I've labelled mine thus:
+is at the whim of the author. I've labelled mine thus (where the date is the date of adding to the
+repo):
 
 	yyyy-mm-dd-title
 
