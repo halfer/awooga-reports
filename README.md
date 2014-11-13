@@ -100,7 +100,11 @@ Comments are welcome on any aspect of this proposal. Would people create reports
 repos the best way to garner involvement? (using automatic pulls and not relying on manual,
 centralised merges ought to streamline contributions).
 
-If this project goes ahead, the data format is likely to change.
+If this project goes ahead, the data format will likely be improved first. Couple of thoughts:
+
+* Resources may occasionally be duplicated over more than one URL, so perhaps it could be valid as
+an array as well as a string (and these would be best reported together if possible)
+* Resources could do with tagging by language or technology, for searchability
 
 Whilst my focus is PHP, reports for all popular programming languages would be welcome, as long as
 claims can easily be verified.
