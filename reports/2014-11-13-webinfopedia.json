@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "title": "Create secure login script in PHP",
+    "url": "http:\/\/www.webinfopedia.com\/php-secure-login-script.html",
+    "description": "Tweeted to author [about library and parameterisation](https:\/\/twitter.com\/ilovephp\/status\/523163293041840129), and [about hashing](https:\/\/twitter.com\/ilovephp\/status\/523163435878854656), but received no response.",
+    "issues": [
+        {
+            "issue_cat_code": "password-hashing",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ],
+    "author_notified_date": "2014-10-17"
+}
