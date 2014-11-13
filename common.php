@@ -63,6 +63,13 @@ function createReportEntry($title, $url, $description, array $issues, $authorNot
 
 function writeReportEntry($file, $title, $url, $description, array $issues, $authorNotifiedDate = null)
 {
+	// Let's apply a size limit to the relative dir/file name
+	$sizeLimit = 128;
+	if (strlen($file) > $sizeLimit)
+	{
+		throw new Exception("Filenames must be less than $sizeLimit characters long");
+	}
+	
 	$json = createReportEntry($title, $url, $description, $issues, $authorNotifiedDate);
 	$outputFile = __DIR__ . '/' . $file;
 	file_put_contents($outputFile, $json);
