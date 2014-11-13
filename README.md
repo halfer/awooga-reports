@@ -76,6 +76,7 @@ A central website might offer these features:
 * Read data into a relational database
 * Offer a browsable, paginated and searchable list of resources. Beginners and contributors can
 search by domain or URL to see if a tutorial they have found is listed
+* Offer a public list of source repo URLs
 * Build a downloadable JSON document for the full database, for anyone to use as they wish
 
 Copyright
@@ -85,3 +86,21 @@ All data contributed to the system would fall under some sort of copyleft licens
 Creative Commons. Whilst the associated website should be fine for most purposes, anyone wanting
 to do something novel with the data would be free to do so without needing to seek permission
 (either from the project or from individual contributors).
+
+Project name
+------
+
+[Awooga](https://en.wikipedia.org/wiki/Awooga) is the onomatopoeiac form of a klaxon sounding, in
+English. It's slightly cartoonish, but of course it has a serious purpose: a warning.
+
+Request for comments
+------
+
+Comments are welcome on any aspect of this proposal. Would people create reports? Are public
+repos the best way to garner involvement? (using automatic pulls and not relying on manual,
+centralised merges ought to streamline contributions).
+
+If this project goes ahead, the data format is likely to change.
+
+Whilst my focus is PHP, reports for all popular programming languages would be welcome, as long as
+claims can easily be verified.
