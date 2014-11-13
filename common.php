@@ -36,7 +36,7 @@ function createIssue($issueCatCode, $description = null)
  * @param array $issues
  * @param string $authorNotifiedDate Optional
  */
-function printReportEntry($title, $url, $description, array $issues, $authorNotifiedDate = null)
+function createReportEntry($title, $url, $description, array $issues, $authorNotifiedDate = null)
 {
 	$entry = array(
 		'version' => 1,
@@ -58,5 +58,12 @@ function printReportEntry($title, $url, $description, array $issues, $authorNoti
 		$entry['author_notified_date'] = $authorNotifiedDate;
 	}
 
-	echo json_encode($entry, JSON_PRETTY_PRINT);
+	return json_encode($entry, JSON_PRETTY_PRINT);
+}
+
+function writeReportEntry($file, $title, $url, $description, array $issues, $authorNotifiedDate = null)
+{
+	$json = createReportEntry($title, $url, $description, $issues, $authorNotifiedDate);
+	$outputFile = __DIR__ . '/' . $file;
+	file_put_contents($outputFile, $json);
 }
