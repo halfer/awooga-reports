@@ -74,9 +74,9 @@ A central website might offer these features:
 
 * Read repositories every few hours to update data
 * Read data into a relational database
-* Offer a browsable, paginated and searchable list of resources. Beginners and contributors can
-search by domain or URL to see if a tutorial they have found is listed
-* Offer a public list of source repo URLs
+* Offer a browsable, paginated and searchable list of resources. Beginners and contributors alike
+can search by domain or URL to see if a tutorial they have found is listed
+* Offer a public list of source repo URLs and associated statistics
 * Build a downloadable JSON document for the full database, for anyone to use as they wish
 
 Copyright
