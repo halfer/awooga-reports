@@ -12,19 +12,21 @@ would be substantial.
 
 I noticed this problem after publishing a PHP tutorial called [I ♥ PHP](http://ilovephp.jondh.me.uk);
 the more I looked for other material to send new coders to, the more issues I found. It turns out for
-PHP that there are very few resources on the web I'd be happy to recommend.
+PHP that there are very few resources on the web I'd be happy to recommend (though it would not be
+surprising to find the same for other languages also).
 
 There are two basic outcomes that I would like to see as a result of this project. The first is
 that authors experience a collective pressure from the technology community to improve or remove
 material that teaches poor practices. Also, it would be good for new programmers to have a central
-site they can check tutorials against, to warn them off resources that are not of high quality.
+site they can check tutorials against, to warn them about resources that are not of high quality.
 
 Data collection
 ------
 
 The potential size of this data set means that it is not feasible for a single individual or group to
-collate it by themselves. I therefore suggest the data is maintained by any willing volunteer in
-public Git repositories (e.g. GitHub, BitBucket etc). The URL of these repositories would then be
+collate it by themselves. I therefore suggest the data is maintained by willing volunteers in
+public Git repositories (e.g. GitHub, BitBucket etc), of which this repo is itself an example. The
+URL of these repositories would then be
 held in a central database and each would be periodically scanned for updates, without any oversight
 from a central coordinator.
 
