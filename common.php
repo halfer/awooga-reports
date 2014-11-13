@@ -14,6 +14,7 @@ function createIssue($issueCatCode, $description = null)
 		'xss', 'sql-injection',
 		'password-clear', 'password-hashing',
 		'deprecated-library',
+		'uncategorised',
 	);
 	if (!in_array($issueCatCode, $issueCodes))
 	{
