@@ -14,7 +14,7 @@ writeReportEntry(
 );
 
 writeReportEntry(
-	'drafts/2014-11-13-onlineustaad.json.draft',
+	'reports/2014-11-13-onlineustaad.json',
 	"Creating a Login System in PHP (Tutorial)",
 	array(
 		'http://vimeo.com/108934852',
