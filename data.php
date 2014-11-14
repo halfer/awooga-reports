@@ -16,10 +16,14 @@ writeReportEntry(
 writeReportEntry(
 	'drafts/2014-11-13-onlineustaad.json.draft',
 	"Creating a Login System in PHP (Tutorial)",
-	'http://vimeo.com/108934852',
+	array(
+		'http://vimeo.com/108934852',
+		'http://www.onlinetuting.com/create-login-script-in-php/',
+	),
 	"[Tweeted to author](https://twitter.com/ilovephp/status/522789868301479937), received no response.",
 	array(
-		createIssue('uncategorised')
+		createIssue('sql-needs-parameterisation'),
+		createIssue('password-clear')
 	),
 	"2014-10-31"
 );
@@ -30,7 +34,7 @@ writeReportEntry(
 	'http://www.webinfopedia.com/php-secure-login-script.html',
 	"Tweeted to author [about library and parameterisation](https://twitter.com/ilovephp/status/523163293041840129), and [about hashing](https://twitter.com/ilovephp/status/523163435878854656), but received no response.",
 	array(
-		createIssue('password-hashing'),
+		createIssue('password-inadequate-hashing'),
 		createIssue('deprecated-library'),
 	),
 	"2014-10-17"

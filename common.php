@@ -12,8 +12,10 @@ function createIssue($issueCatCode, $description = null)
 	// Permitted issues
 	$issueCodes = array(
 		'xss', 'sql-injection',
-		'password-clear', 'password-hashing',
+		'password-clear',
+		'password-inadequate-hashing',
 		'deprecated-library',
+		'sql-needs-parameterisation',
 		'uncategorised',
 	);
 	if (!in_array($issueCatCode, $issueCodes))
@@ -31,7 +33,7 @@ function createIssue($issueCatCode, $description = null)
  * Renders a pretty JSON string containing a report + issues
  * 
  * @param string $title Plaintext title
- * @param string $url URL of resource
+ * @param string|array $url URL(s) of resource
  * @param string $description Description in markdown format
  * @param array $issues
  * @param string $authorNotifiedDate Optional
@@ -50,6 +52,16 @@ function createReportEntry($title, $url, $description, array $issues, $authorNot
 	if (!$issues)
 	{
 		throw new Exception('A report must feature at least one issue');
+	}
+
+	// Require title and description to be a string
+	if (!is_string($title))
+	{
+		throw new Exception('The title must be a string');
+	}
+	if (!is_string($description))
+	{
+		throw new Exception('The description must be a string');
 	}
 
 	// Author notification may not always be done when reporting, so optional
