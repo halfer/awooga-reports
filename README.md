@@ -53,6 +53,9 @@ Resources can have a title associated with them, which will be plain text. Resou
 one or more issue codes associated with them, selected from a list of valid codes. Both resources
 and issues can have descriptions attached to them, both of which will be in markdown format.
 
+URLs can be either strings (the resource has one URL) or an array of strings (handy if a resource
+has duplicates, or is split over an article and a video).
+
 Since the format may change over time, each JSON file will contain a format version number, to
 allow for future expansion.
 
@@ -106,10 +109,8 @@ Comments are welcome on any aspect of this proposal. Would people create reports
 repos the best way to garner involvement? (using automatic pulls and not relying on manual,
 centralised merges ought to streamline contributions).
 
-If this project goes ahead, the data format will likely be improved first. Couple of thoughts:
+If this project goes ahead, the data format will likely be improved first:
 
-* Resources may occasionally be duplicated over more than one URL, so perhaps it could be valid as
-an array as well as a string (and these would be best reported together if possible)
 * Resources could do with tagging by language or technology, for searchability
 
 Whilst my focus is PHP, reports for all popular programming languages would be welcome, as long as
