@@ -5,7 +5,7 @@
     "description": "Tweeted to author [about library and parameterisation](https:\/\/twitter.com\/ilovephp\/status\/523163293041840129), and [about hashing](https:\/\/twitter.com\/ilovephp\/status\/523163435878854656), but received no response.",
     "issues": [
         {
-            "issue_cat_code": "password-hashing",
+            "issue_cat_code": "password-inadequate-hashing",
             "description": null
         },
         {

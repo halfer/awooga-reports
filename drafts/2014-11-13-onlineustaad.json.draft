@@ -1,11 +1,18 @@
 {
     "version": 1,
     "title": "Creating a Login System in PHP (Tutorial)",
-    "url": "http:\/\/vimeo.com\/108934852",
+    "url": [
+        "http:\/\/vimeo.com\/108934852",
+        "http:\/\/www.onlinetuting.com\/create-login-script-in-php\/"
+    ],
     "description": "[Tweeted to author](https:\/\/twitter.com\/ilovephp\/status\/522789868301479937), received no response.",
     "issues": [
         {
-            "issue_cat_code": "uncategorised",
+            "issue_cat_code": "sql-needs-parameterisation",
+            "description": null
+        },
+        {
+            "issue_cat_code": "password-clear",
             "description": null
         }
     ],
