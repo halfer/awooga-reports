@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "title": "Tutorial Make a Simple Website E-Commerce with PHP MySql and Bootstrap",
+    "url": "http:\/\/betterbusinessforever.com\/?p=354",
+    "description": "The problem here is the [zipfile](https:\/\/www.dropbox.com\/s\/lt4ng1pm5vyb3y0\/shop.zip), which contains SQL injection flaws. I've [let the author know](https:\/\/twitter.com\/ilovephp\/status\/523919390983868416), to no avail.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        }
+    ],
+    "author_notified_date": "2014-10-18"
+}

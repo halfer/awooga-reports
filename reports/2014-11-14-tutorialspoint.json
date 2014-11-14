@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "title": "PHP and MySQL Tutorial",
+    "url": "http:\/\/www.tutorialspoint.com\/php\/php_and_mysql.htm",
+    "description": "A variety of issues with the chapters here. Some seem to be proofed against SQL injection, but nevertheless need parameterisation, others (e.g. Deleting Data from MySQL Database, Updating Data into MySQL Database) contain straightforward SQL injection vulns. Have [tweeted to author](https:\/\/twitter.com\/ilovephp\/status\/523546917335478272).",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "sql-needs-parameterisation",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ],
+    "author_notified_date": "2014-10-18"
+}
