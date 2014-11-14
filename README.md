@@ -57,13 +57,14 @@ Since the format may change over time, each JSON file will contain a format vers
 allow for future expansion.
 
 Other than the extension, there is no proposed standard for report filenames or directories - this
-is at the whim of the author. I've labelled mine thus (where the date is the date of adding to the
-repo):
+is at the whim of the author. I've labelled mine thus (where the date is when the report was added
+to the repo):
 
-	yyyy-mm-dd-title
+	/reports/yyyy-mm-dd-title.json
 
 Files that are renamed or moved within the repo will result in the old version being removed and
-the new one added as if it is brand new.
+the new one added as if it is brand new (that said, this could be avoided by doing a lookup
+against both the source repo and the resource URL).
 
 Generation functions
 -------
