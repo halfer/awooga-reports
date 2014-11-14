@@ -88,7 +88,28 @@ writeReportEntry(
 	"A number of security flaws, and so many syntax issues it wouldn't work at all. The author [has promised to fix it](https://twitter.com/ilovephp/status/523945131800817664).",
 	array(
 		createIssue('sql-injection'),
-		createIssue('deprecated-library'),		
+		createIssue('deprecated-library'),
 	),
 	'2014-10-19'
 );
+
+writeReportEntry(
+	'reports/2014-11-14-learn2crack.json',
+	"Develop a Complete Android Login Registration System with PHP, MySQL",
+	"http://www.learn2crack.com/2013/08/develop-android-login-registration-with-php-mysql.html/4",
+	"The usual SQL injection flaws in this one, the [author has been notified](https://twitter.com/ilovephp/status/524685931404881920). Also, the password hashing isn't strong enough. Looks like the login can be bypassed by changing the target user's password",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
+		createIssue('password-inadequate-hashing', 'SHA1/base64/salt home-made algorithm not a substitute for password_hash().'),
+	),
+	"date"
+);
+
+// @todo This is marked as out of date, but it is still being tweeted: https://twitter.com/ilovephp/status/525413903355088898
+// @todo https://twitter.com/ilovephp/status/525415879463686144
+// @todo http://www.amitpatil.me/youtube-like-rating-script-jquery-php/ - variable as well as SQL injection!
+// @todo Plenty on  http://phppot.com to choose from
+// @todo https://twitter.com/ilovephp/status/526448585874100225
+// @todo https://twitter.com/ilovephp/status/526449945113812993
+// @todo https://twitter.com/ilovephp/status/526499792441344000
