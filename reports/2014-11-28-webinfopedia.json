@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "title": "Simple registration form in PHP and MYSQL",
+    "url": "http:\/\/www.webinfopedia.com\/registration-form-in-php.html",
+    "description": "Have [contacted author](https:\/\/twitter.com\/ilovephp\/status\/525415879463686144) about SQL injection, received no response. Also features plain-text passwords.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        },
+        {
+            "issue_cat_code": "password-clear",
+            "description": null
+        }
+    ],
+    "author_notified_date": "2014-10-23"
+}

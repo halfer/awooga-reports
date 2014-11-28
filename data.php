@@ -103,13 +103,55 @@ writeReportEntry(
 		createIssue('deprecated-library'),
 		createIssue('password-inadequate-hashing', 'SHA1/base64/salt home-made algorithm not a substitute for password_hash().'),
 	),
-	"date"
+	"2014-10-21"
+);
+
+writeReportEntry(
+	'reports/2014-11-28-webinfopedia.json',
+	"Simple registration form in PHP and MYSQL",
+	"http://www.webinfopedia.com/registration-form-in-php.html",
+	"Have [contacted author](https://twitter.com/ilovephp/status/525415879463686144) about SQL injection, received no response. Also features plain-text passwords.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
+		createIssue('password-clear'),
+	),
+	"2014-10-23"
+);
+
+writeReportEntry(
+	'reports/2014-11-28-amitpatel.json',
+	"Youtube like rating script jquery php",
+	"http://www.amitpatil.me/youtube-like-rating-script-jquery-php/",
+	"It's worth disabling JavaScript for this site - the whole page uses JavaScript to redirect to an advertiser's site. PHP code features variable as well as SQL injection. Have [contacted the author](https://twitter.com/ilovephp/status/525794166803292160) but not received a reply.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
+		createIssue('variable-injection', "The use of `extract()` to create variables from unfiltered user input is risky, since it can have malicious uses"),
+	),
+	"2014-10-24"
 );
 
 // @todo This is marked as out of date, but it is still being tweeted: https://twitter.com/ilovephp/status/525413903355088898
-// @todo https://twitter.com/ilovephp/status/525415879463686144
-// @todo http://www.amitpatil.me/youtube-like-rating-script-jquery-php/ - variable as well as SQL injection!
-// @todo Plenty on  http://phppot.com to choose from
-// @todo https://twitter.com/ilovephp/status/526448585874100225
-// @todo https://twitter.com/ilovephp/status/526449945113812993
-// @todo https://twitter.com/ilovephp/status/526499792441344000
+// @todo Plenty on  http://phppot.com:
+//		http://phppot.com/php/simple-php-shopping-cart/ (sql-injection, deprecated-library
+//		http://phppot.com/php/php-crud-with-search-and-pagination/ (sql-injection, deprecated-library
+//		http://phppot.com/php/php-crud-with-search-and-pagination-using-jquery-ajax/ (sql-injection, deprecated-library
+//		http://phppot.com/php/user-authentication-using-php-and-mysql/ (sql-injection, password-clear, deprecated-library)
+//		http://phppot.com/php/php-login-script-with-session/ (sql-injection, password-clear, deprecated-library)
+//		http://phppot.com/php/php-change-password-script/ (sql-injection, password-clear, deprecated-library)
+//		http://phppot.com/php/ajax-programming-with-php/ (sql-injection, password-clear, deprecated-library)
+//		
+//		http://phppot.com/jquery/dynamic-content-load-using-jquery-ajax/ (sql-injection, deprecated-library)
+//		http://phppot.com/jquery/jquery-ajax-autocomplete-country-example/ (sql-injection, deprecated-library)
+//		http://phppot.com/jquery/dynamic-star-rating-with-php-and-jquery/ (sql-injection, deprecated-library)
+//		http://phppot.com/jquery/facebook-style-like-unlike-using-php-jquery/ (sql-injection, deprecated-library)
+//		http://phppot.com/jquery/read-display-json-data-using-jquery-ajax/ (deprecated-library)
+//		http://phppot.com/jquery/php-voting-system-with-jquery-ajax/ (sql-injection, deprecated-library)
+//		http://phppot.com/jquery/jquery-drag-and-drop-image-upload/ (upload-arbitrary-file)
+//		http://phppot.com/jquery/php-ajax-multiple-image-upload-using-jquery/ (upload-arbitrary-file)
+//		// And lots more in the jQuery AJAX section...
+//		
+// @todo https://twitter.com/ilovephp/status/526448585874100225 (sourcecodester)
+// @todo https://twitter.com/ilovephp/status/526449945113812993 (sourcecodester)
+// @todo https://twitter.com/ilovephp/status/526499792441344000 (tutsplus)

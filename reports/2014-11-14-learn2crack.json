@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "title": "Develop a Complete Android Login Registration System with PHP, MySQL",
+    "url": "http:\/\/www.learn2crack.com\/2013\/08\/develop-android-login-registration-with-php-mysql.html\/4",
+    "description": "The usual SQL injection flaws in this one, the [author has been notified](https:\/\/twitter.com\/ilovephp\/status\/524685931404881920). Also, the password hashing isn't strong enough. Looks like the login can be bypassed by changing the target user's password",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        },
+        {
+            "issue_cat_code": "password-inadequate-hashing",
+            "description": "SHA1\/base64\/salt home-made algorithm not a substitute for password_hash()."
+        }
+    ],
+    "author_notified_date": "2014-10-21"
+}
