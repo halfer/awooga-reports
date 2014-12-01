@@ -123,9 +123,9 @@ writeReportEntry(
 	'reports/2014-11-28-amitpatel.json',
 	"Youtube like rating script jquery php",
 	"http://www.amitpatil.me/youtube-like-rating-script-jquery-php/",
-	"It's worth disabling JavaScript for this site - the whole page uses JavaScript to redirect to an advertiser's site. PHP code features variable as well as SQL injection. Have [contacted the author](https://twitter.com/ilovephp/status/525794166803292160) but not received a reply.",
+	"It's worth disabling JavaScript for this site - the whole page uses JavaScript to redirect to an advertiser's site. PHP code features variable as well as SQL injection. Have [contacted the author](https://twitter.com/ilovephp/status/525794166803292160), and received a reply, but I don't think the point was understood. I've replied again to make it as clear as I can.",
 	array(
-		createIssue('sql-injection'),
+		createIssue('sql-injection', "The `\$item` variable can be used in a POST op to inject arbitrary SQL into a database query"),
 		createIssue('deprecated-library'),
 		createIssue('variable-injection', "The use of `extract()` to create variables from unfiltered user input is risky, since it can have malicious uses"),
 	),

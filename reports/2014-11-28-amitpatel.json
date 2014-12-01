@@ -2,11 +2,11 @@
     "version": 1,
     "title": "Youtube like rating script jquery php",
     "url": "http:\/\/www.amitpatil.me\/youtube-like-rating-script-jquery-php\/",
-    "description": "It's worth disabling JavaScript for this site - the whole page uses JavaScript to redirect to an advertiser's site. PHP code features variable as well as SQL injection. Have [contacted the author](https:\/\/twitter.com\/ilovephp\/status\/525794166803292160) but not received a reply.",
+    "description": "It's worth disabling JavaScript for this site - the whole page uses JavaScript to redirect to an advertiser's site. PHP code features variable as well as SQL injection. Have [contacted the author](https:\/\/twitter.com\/ilovephp\/status\/525794166803292160), and received a reply, but I don't think the point was understood. I've replied again to make it as clear as I can.",
     "issues": [
         {
             "issue_cat_code": "sql-injection",
-            "description": null
+            "description": "The `$item` variable can be used in a POST op to inject arbitrary SQL into a database query"
         },
         {
             "issue_cat_code": "deprecated-library",
