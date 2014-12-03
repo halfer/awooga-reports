@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "title": "Android PHP\/MYSQL Tutorial",
+    "url": "http:\/\/www.tutorialspoint.com\/android\/android_php_mysql.htm",
+    "description": "SQL injection issues, despite using mysqli. Also incorrectly advocates for the use of plain text in a password storage system. Have [contacted the author](https:\/\/twitter.com\/ilovephp\/status\/540182898960523264) to ask for improvements.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "sql-needs-parameterisation",
+            "description": null
+        },
+        {
+            "issue_cat_code": "password-clear",
+            "description": null
+        }
+    ]
+}

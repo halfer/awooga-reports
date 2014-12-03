@@ -60,13 +60,25 @@ writeReportEntry(
 	'reports/2014-11-14-tutorialspoint.json',
 	"PHP and MySQL Tutorial",
 	'http://www.tutorialspoint.com/php/php_and_mysql.htm',
-	"A variety of issues with the chapters here. Some seem to be proofed against SQL injection, but nevertheless need parameterisation, others (e.g. Deleting Data from MySQL Database, Updating Data into MySQL Database) contain straightforward SQL injection vulns. Have [tweeted to author](https://twitter.com/ilovephp/status/523546917335478272).",
+	"A variety of issues with the chapters here. Some seem to be proofed against SQL injection, but nevertheless need parameterisation, others (e.g. Deleting Data from MySQL Database, Updating Data into MySQL Database) contain straightforward SQL injection vulns. Have [tweeted to author](https://twitter.com/ilovephp/status/523546917335478272), recceived no reply.",
 	array(
 		createIssue('sql-injection'),
 		createIssue('sql-needs-parameterisation'),
 		createIssue('deprecated-library'),
 	),
 	'2014-10-18'
+);
+
+writeReportEntry(
+	'reports/2014-12-03-tutorialspoint.json',
+	'Android PHP/MYSQL Tutorial',
+	'http://www.tutorialspoint.com/android/android_php_mysql.htm',
+	"SQL injection issues, despite using mysqli. Also incorrectly advocates for the use of plain text in a password storage system. Have [contacted the author](https://twitter.com/ilovephp/status/540182898960523264) to ask for improvements.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('sql-needs-parameterisation'),
+		createIssue('password-clear'),
+	)
 );
 
 writeReportEntry(
@@ -123,7 +135,7 @@ writeReportEntry(
 	'reports/2014-11-28-amitpatel.json',
 	"Youtube like rating script jquery php",
 	"http://www.amitpatil.me/youtube-like-rating-script-jquery-php/",
-	"It's worth disabling JavaScript for this site - the whole page uses JavaScript to redirect to an advertiser's site. PHP code features variable as well as SQL injection. Have [contacted the author](https://twitter.com/ilovephp/status/525794166803292160), and received a reply, but I don't think the point was understood. I've replied again to make it as clear as I can.",
+	"It's worth disabling JavaScript for this site - the whole page uses JavaScript to redirect to an advertiser's site. PHP code features variable as well as SQL injection. Have [contacted the author](https://twitter.com/ilovephp/status/525794166803292160), and [the author has undertaken to fix it](https://twitter.com/amitspatil/status/540083644753129473).",
 	array(
 		createIssue('sql-injection', "The `\$item` variable can be used in a POST op to inject arbitrary SQL into a database query"),
 		createIssue('deprecated-library'),
