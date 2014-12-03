@@ -144,15 +144,49 @@ writeReportEntry(
 	"2014-10-24"
 );
 
+$phpPotGeneralDesc = "A site with a large number of vulnerable scripts, including many that are live on the author's own server.";
+$phpPotInjectionDesc = "This site contains a large number of SQL injections, all or mostly involving the legacy mysql library. Interestingly the [author cites parameterisation as a benefit of MySQLi](http://phppot.com/php/mysql-vs-mysqli-in-php/) elsewhere on the site.";
+
+writeReportEntry(
+	'reports/2014-12-03-phppot-1.json',
+	"Simple PHP Shopping Cart",
+	"http://phppot.com/php/simple-php-shopping-cart/",
+	$phpPotGeneralDesc,
+	array(
+		createIssue('sql-injection', $phpPotInjectionDesc),
+		createIssue('deprecated-library'),
+	)
+);
+
+writeReportEntry(
+	'reports/2014-12-03-phppot-2.json',
+	"PHP CRUD with Search and Pagination",
+	"http://phppot.com/php/php-crud-with-search-and-pagination/",
+	$phpPotGeneralDesc,
+	array(
+		createIssue('sql-injection', $phpPotInjectionDesc),
+		createIssue('deprecated-library'),
+	)
+);
+
+writeReportEntry(
+	'reports/2014-12-03-phppot-3.json',
+	"PHP CRUD with Search and Pagination using jQuery AJAX",
+	"http://phppot.com/php/php-crud-with-search-and-pagination-using-jquery-ajax/",
+	$phpPotGeneralDesc,
+	array(
+		createIssue('sql-injection', $phpPotInjectionDesc),
+		createIssue('deprecated-library'),
+	)
+);
+
 // @todo This is marked as out of date, but it is still being tweeted: https://twitter.com/ilovephp/status/525413903355088898
-// @todo Plenty on  http://phppot.com:
-//		http://phppot.com/php/simple-php-shopping-cart/ (sql-injection, deprecated-library
-//		http://phppot.com/php/php-crud-with-search-and-pagination/ (sql-injection, deprecated-library
-//		http://phppot.com/php/php-crud-with-search-and-pagination-using-jquery-ajax/ (sql-injection, deprecated-library
+
 //		http://phppot.com/php/user-authentication-using-php-and-mysql/ (sql-injection, password-clear, deprecated-library)
 //		http://phppot.com/php/php-login-script-with-session/ (sql-injection, password-clear, deprecated-library)
 //		http://phppot.com/php/php-change-password-script/ (sql-injection, password-clear, deprecated-library)
 //		http://phppot.com/php/ajax-programming-with-php/ (sql-injection, password-clear, deprecated-library)
+//		http://phppot.com/php/php-contact-form/ (email-header-injection, sql-injection, deprecated-library)
 //		
 //		http://phppot.com/jquery/dynamic-content-load-using-jquery-ajax/ (sql-injection, deprecated-library)
 //		http://phppot.com/jquery/jquery-ajax-autocomplete-country-example/ (sql-injection, deprecated-library)
@@ -162,7 +196,15 @@ writeReportEntry(
 //		http://phppot.com/jquery/php-voting-system-with-jquery-ajax/ (sql-injection, deprecated-library)
 //		http://phppot.com/jquery/jquery-drag-and-drop-image-upload/ (upload-arbitrary-file)
 //		http://phppot.com/jquery/php-ajax-multiple-image-upload-using-jquery/ (upload-arbitrary-file)
-//		// And lots more in the jQuery AJAX section...
+//		http://phppot.com/jquery/load-data-dynamically-on-page-scroll-using-jquery-ajax-and-php/ (xss, deprecated library)
+//		http://phppot.com/jquery/ajax-add-edit-delete-records-in-database-using-php-and-jquery/ (sql-injection, deprecated-library)
+//		http://phppot.com/jquery/live-username-availability-check-using-php-and-jquery-ajax/ (sql-injection, deprecated-library)
+//		http://phppot.com/jquery/jquery-progress-bar-for-php-ajax-file-upload/ (upload-arbitrary-file)
+//		http://phppot.com/jquery/php-contact-form-with-jquery-ajax/ (email-header-injection)
+//		http://phppot.com/jquery/using-jqgrid-control-with-php/ (sql-injection, deprecated-library)
+//		
+//		For any above that are for sql-injection, the author seems to know about this here:
+//		http://phppot.com/php/mysql-vs-mysqli-in-php/
 //		
 // @todo https://twitter.com/ilovephp/status/526448585874100225 (sourcecodester)
 // @todo https://twitter.com/ilovephp/status/526449945113812993 (sourcecodester)
