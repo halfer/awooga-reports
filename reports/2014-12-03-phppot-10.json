@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "title": "Live Username Availability Check using PHP and jQuery AJAX",
+    "url": "http:\/\/phppot.com\/jquery\/live-username-availability-check-using-php-and-jquery-ajax\/",
+    "description": "A site with a large number of vulnerable scripts, including many that are live on the author's own server.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": "This site contains a large number of SQL injections, all or mostly involving the legacy mysql library. Interestingly the [author cites parameterisation as a benefit of MySQLi](http:\/\/phppot.com\/php\/mysql-vs-mysqli-in-php\/) elsewhere on the site."
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "title": "Tutorial Menu Using jqGrid Control with PHP",
+    "url": "http:\/\/phppot.com\/jquery\/using-jqgrid-control-with-php\/",
+    "description": "A site with a large number of vulnerable scripts, including many that are live on the author's own server.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": "This site contains a large number of SQL injections, all or mostly involving the legacy mysql library. Interestingly the [author cites parameterisation as a benefit of MySQLi](http:\/\/phppot.com\/php\/mysql-vs-mysqli-in-php\/) elsewhere on the site."
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ]
+}
