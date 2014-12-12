@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "title": "Demo Facebook like Button Application Using PHP, MySQL, jQuery and Ajax",
+    "url": "http:\/\/www.smarttutorials.net\/demo-facebook-like-button-application-using-php-mysql-jquery-and-ajax\/",
+    "description": "Uses legacy library, similar SQL injection vulns to other MySQL tutorials on this domain.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ]
+}

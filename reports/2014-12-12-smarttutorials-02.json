@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "title": "Responsive Quiz Application Using PHP, MySQL, jQuery, Ajax and Twitter Bootstrap",
+    "url": "http:\/\/www.smarttutorials.net\/responsive-quiz-application-using-php-mysql-jquery-ajax-and-twitter-bootstrap\/",
+    "description": "Uses legacy library. Several SQL injection vulnerabilities here.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ]
+}

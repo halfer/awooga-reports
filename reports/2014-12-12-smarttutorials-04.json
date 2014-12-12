@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "title": "Instant Search With Pagination in PHP, MySQL, jQuery and Ajax",
+    "url": [
+        "http:\/\/www.smarttutorials.net\/instant-search-with-pagination-in-php-mysql-jquery-and-ajax\/",
+        "http:\/\/www.smarttutorials.net\/pagination-previous-next-first-and-last-button-using-jqgrid-php-mysql-jquery-and-ajax\/"
+    ],
+    "description": "Two similar pagination tutorials, both with security vulnerabilities",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ]
+}

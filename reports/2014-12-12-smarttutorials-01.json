@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "title": "jQuery Autocomplete Mutiple Fields Using jQuery, Ajax, PHP and MySQL",
+    "url": [
+        "http:\/\/www.smarttutorials.net\/jquery-autocomplete-multiple-fields-using-ajax-php-mysql-example\/",
+        "http:\/\/www.smarttutorials.net\/jquery-autocomplete-search-using-php-mysql-and-ajax\/"
+    ],
+    "description": "Two versions of this tutorial. Have [contacted the author](https:\/\/twitter.com\/ilovephp\/status\/543363764079583232) to let them know about the SQL injection issue in both.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": "The MySQLi library is in use, so this just needs modifying to parameterised queries"
+        }
+    ],
+    "author_notified_date": "2014-12-12"
+}

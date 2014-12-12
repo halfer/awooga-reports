@@ -144,6 +144,58 @@ writeReportEntry(
 	"2014-10-24"
 );
 
+writeReportEntry(
+	'reports/2014-12-12-smarttutorials-01.json',
+	"jQuery Autocomplete Mutiple Fields Using jQuery, Ajax, PHP and MySQL",
+	array(
+		'http://www.smarttutorials.net/jquery-autocomplete-multiple-fields-using-ajax-php-mysql-example/',
+		'http://www.smarttutorials.net/jquery-autocomplete-search-using-php-mysql-and-ajax/',
+	),
+	"Two versions of this tutorial. Have [contacted the author](https://twitter.com/ilovephp/status/543363764079583232) to let them know about the SQL injection issue in both.",
+	array(
+		createIssue('sql-injection', "The MySQLi library is in use, so this just needs modifying to parameterised queries"),
+	),
+	'2014-12-12'
+);
+
+writeReportEntry(
+	'reports/2014-12-12-smarttutorials-02.json',
+	"Responsive Quiz Application Using PHP, MySQL, jQuery, Ajax and Twitter Bootstrap",
+	'http://www.smarttutorials.net/responsive-quiz-application-using-php-mysql-jquery-ajax-and-twitter-bootstrap/',
+	"Uses legacy library. Several SQL injection vulnerabilities here.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
+	)
+);
+
+writeReportEntry(
+	'reports/2014-12-12-smarttutorials-03.json',
+	"Demo Facebook like Button Application Using PHP, MySQL, jQuery and Ajax",
+	'http://www.smarttutorials.net/demo-facebook-like-button-application-using-php-mysql-jquery-and-ajax/',
+	"Uses legacy library, similar SQL injection vulns to other MySQL tutorials on this domain.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
+	)
+);
+
+writeReportEntry(
+	'reports/2014-12-12-smarttutorials-04.json',
+	"Instant Search With Pagination in PHP, MySQL, jQuery and Ajax",
+	array(
+		'http://www.smarttutorials.net/instant-search-with-pagination-in-php-mysql-jquery-and-ajax/',
+		'http://www.smarttutorials.net/pagination-previous-next-first-and-last-button-using-jqgrid-php-mysql-jquery-and-ajax/',
+	),
+	"Two similar pagination tutorials, both with security vulnerabilities",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
+	)
+);
+
+// @todo And probably plenty more in http://www.smarttutorials.net/php/
+
 $phpPotGeneralDesc = "A site with a large number of vulnerable scripts, including many that are live on the author's own server.";
 $phpPotInjectionDesc = "This site contains a large number of SQL injections, all or mostly involving the legacy mysql library. Interestingly the [author cites parameterisation as a benefit of MySQLi](http://phppot.com/php/mysql-vs-mysqli-in-php/) elsewhere on the site.";
 $phpPotInjectAndDeprecated = array(
@@ -239,8 +291,6 @@ writeReportEntry(
 	$phpPotInjectAndDeprecated
 );
 
-// @todo This is marked as out of date, but it is still being tweeted: https://twitter.com/ilovephp/status/525413903355088898
-
 //		http://phppot.com/php/user-authentication-using-php-and-mysql/ (sql-injection, password-clear, deprecated-library)
 //		http://phppot.com/php/php-login-script-with-session/ (sql-injection, password-clear, deprecated-library)
 //		http://phppot.com/php/php-change-password-script/ (sql-injection, password-clear, deprecated-library)
@@ -253,7 +303,12 @@ writeReportEntry(
 //		http://phppot.com/jquery/load-data-dynamically-on-page-scroll-using-jquery-ajax-and-php/ (xss, deprecated library)
 //		http://phppot.com/jquery/jquery-progress-bar-for-php-ajax-file-upload/ (upload-arbitrary-file)
 //		http://phppot.com/jquery/php-contact-form-with-jquery-ajax/ (email-header-injection)
-//		
+
+// @todo This is marked as out of date, but it is still being tweeted: https://twitter.com/ilovephp/status/525413903355088898
+
 // @todo https://twitter.com/ilovephp/status/526448585874100225 (sourcecodester)
 // @todo https://twitter.com/ilovephp/status/526449945113812993 (sourcecodester)
 // @todo https://twitter.com/ilovephp/status/526499792441344000 (tutsplus)
+
+// http://www.raywenderlich.com/13541/how-to-create-an-app-like-instagram-with-a-web-service-backend-part-22 (password-clear, sql-needs-parameterisation)
+//   Tweeted here: https://twitter.com/ilovephp/status/541217475804004352, https://twitter.com/ilovephp/status/541217797389701120
