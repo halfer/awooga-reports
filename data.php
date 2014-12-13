@@ -194,6 +194,16 @@ writeReportEntry(
 	)
 );
 
+writeReportEntry(
+	'reports/2014-12-13-iluv2code.json',
+	"Simple Login with CodeIgniter in PHP",
+	"http://www.iluv2code.com/login-with-codeigniter-php.html",
+	"A CodeIgniter tutorial that uses MD5 to hash passwords, with no salt.",
+	array(
+		createIssue('password-inadequate-hashing'),
+	)
+);
+
 // @todo And probably plenty more in http://www.smarttutorials.net/php/
 
 $phpPotGeneralDesc = "A site with a large number of vulnerable scripts, including many that are live on the author's own server.";

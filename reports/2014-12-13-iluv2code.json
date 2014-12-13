@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "title": "Simple Login with CodeIgniter in PHP",
+    "url": "http:\/\/www.iluv2code.com\/login-with-codeigniter-php.html",
+    "description": "A CodeIgniter tutorial that uses MD5 to hash passwords, with no salt.",
+    "issues": [
+        {
+            "issue_cat_code": "password-inadequate-hashing",
+            "description": null
+        }
+    ]
+}
