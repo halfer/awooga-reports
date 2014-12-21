@@ -209,11 +209,12 @@ writeReportEntry(
 	'reports/2014-12-21-androidhive.json',
 	"Android Push Notifications using Google Cloud Messaging (GCM), PHP and MySQL",
 	"http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/",
-	"Another tutorial site recommending the use of the deprecated MySQL library, and with several SQL injection vulnerabilities in the code",
+	"Another tutorial site recommending the use of the deprecated MySQL library, and with several SQL injection vulnerabilities in the code. I have [let the author know](https://twitter.com/ilovephp/status/546750342852268032), as usual.",
 	array(
 		createIssue('sql-injection'),
 		createIssue('deprecated-library'),
-	)
+	),
+	'2014-12-21'
 );
 
 $phpPotGeneralDesc = "A site with a large number of vulnerable scripts, including many that are live on the author's own server.";

@@ -2,7 +2,7 @@
     "version": 1,
     "title": "Android Push Notifications using Google Cloud Messaging (GCM), PHP and MySQL",
     "url": "http:\/\/www.androidhive.info\/2012\/10\/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql\/",
-    "description": "Another tutorial site recommending the use of the deprecated MySQL library, and with several SQL injection vulnerabilities in the code",
+    "description": "Another tutorial site recommending the use of the deprecated MySQL library, and with several SQL injection vulnerabilities in the code. I have [let the author know](https:\/\/twitter.com\/ilovephp\/status\/546750342852268032), as usual.",
     "issues": [
         {
             "issue_cat_code": "sql-injection",
@@ -12,5 +12,6 @@
             "issue_cat_code": "deprecated-library",
             "description": null
         }
-    ]
+    ],
+    "author_notified_date": "2014-12-21"
 }
