@@ -193,6 +193,7 @@ writeReportEntry(
 		createIssue('deprecated-library'),
 	)
 );
+// @todo And probably plenty more in http://www.smarttutorials.net/php/
 
 writeReportEntry(
 	'reports/2014-12-13-iluv2code.json',
@@ -204,7 +205,16 @@ writeReportEntry(
 	)
 );
 
-// @todo And probably plenty more in http://www.smarttutorials.net/php/
+writeReportEntry(
+	'reports/2014-12-21-androidhive.json',
+	"Android Push Notifications using Google Cloud Messaging (GCM), PHP and MySQL",
+	"http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/",
+	"Another tutorial site recommending the use of the deprecated MySQL library, and with several SQL injection vulnerabilities in the code",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
+	)
+);
 
 $phpPotGeneralDesc = "A site with a large number of vulnerable scripts, including many that are live on the author's own server.";
 $phpPotInjectionDesc = "This site contains a large number of SQL injections, all or mostly involving the legacy mysql library. Interestingly the [author cites parameterisation as a benefit of MySQLi](http://phppot.com/php/mysql-vs-mysqli-in-php/) elsewhere on the site.";
@@ -301,10 +311,39 @@ writeReportEntry(
 	$phpPotInjectAndDeprecated
 );
 
-//		http://phppot.com/php/user-authentication-using-php-and-mysql/ (sql-injection, password-clear, deprecated-library)
-//		http://phppot.com/php/php-login-script-with-session/ (sql-injection, password-clear, deprecated-library)
-//		http://phppot.com/php/php-change-password-script/ (sql-injection, password-clear, deprecated-library)
-//		http://phppot.com/php/ajax-programming-with-php/ (sql-injection, password-clear, deprecated-library)
+$phpPotPasswordDesc = "A site with a large number of scripts featuring SQL injection vulnerabilities. A number of articles, including this one, incorrectly advise programmers to store passwords in plain text.";
+writeReportEntry(
+	'reports/2014-12-21-phppot-01.json',
+	"PHP User Authentication with MySQL",
+	"http://phppot.com/php/user-authentication-using-php-and-mysql/",
+	$phpPotPasswordDesc,
+	array_merge($phpPotInjectAndDeprecated, createIssue('password-clear'))
+);
+
+writeReportEntry(
+	'reports/2014-12-21-phppot-02.json',
+	"PHP Login Script with Session",
+	"http://phppot.com/php/php-login-script-with-session/",
+	$phpPotPasswordDesc,
+	array_merge($phpPotInjectAndDeprecated, createIssue('password-clear'))
+);
+
+writeReportEntry(
+	'reports/2014-12-21-phppot-03.json',
+	"PHP Change Password Script",
+	"http://phppot.com/php/php-change-password-script/",
+	$phpPotPasswordDesc,
+	array_merge($phpPotInjectAndDeprecated, createIssue('password-clear'))
+);
+
+writeReportEntry(
+	'reports/2014-12-21-phppot-04.json',
+	"PHP AJAX Programming",
+	"http://phppot.com/php/ajax-programming-with-php/",
+	$phpPotPasswordDesc,
+	array_merge($phpPotInjectAndDeprecated, createIssue('password-clear'))
+);
+
 //		http://phppot.com/php/php-contact-form/ (email-header-injection, sql-injection, deprecated-library)
 //		
 //		http://phppot.com/jquery/read-display-json-data-using-jquery-ajax/ (deprecated-library)
