@@ -3,16 +3,18 @@
     "title": "PHP Login Script with Session",
     "url": "http:\/\/phppot.com\/php\/php-login-script-with-session\/",
     "description": "A site with a large number of scripts featuring SQL injection vulnerabilities. A number of articles, including this one, incorrectly advise programmers to store passwords in plain text.",
-    "issues": {
-        "0": {
+    "issues": [
+        {
             "issue_cat_code": "sql-injection",
             "description": "This site contains a large number of SQL injections, all or mostly involving the legacy mysql library. Interestingly the [author cites parameterisation as a benefit of MySQLi](http:\/\/phppot.com\/php\/mysql-vs-mysqli-in-php\/) elsewhere on the site."
         },
-        "1": {
+        {
             "issue_cat_code": "deprecated-library",
             "description": null
         },
-        "issue_cat_code": "password-clear",
-        "description": null
-    }
+        {
+            "issue_cat_code": "password-clear",
+            "description": null
+        }
+    ]
 }

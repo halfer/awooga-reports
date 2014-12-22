@@ -329,7 +329,7 @@ writeReportEntry(
 	"PHP User Authentication with MySQL",
 	"http://phppot.com/php/user-authentication-using-php-and-mysql/",
 	$phpPotPasswordDesc,
-	array_merge($phpPotInjectAndDeprecated, createIssue('password-clear'))
+	array_merge($phpPotInjectAndDeprecated, array(createIssue('password-clear')))
 );
 
 writeReportEntry(
@@ -337,7 +337,7 @@ writeReportEntry(
 	"PHP Login Script with Session",
 	"http://phppot.com/php/php-login-script-with-session/",
 	$phpPotPasswordDesc,
-	array_merge($phpPotInjectAndDeprecated, createIssue('password-clear'))
+	array_merge($phpPotInjectAndDeprecated, array(createIssue('password-clear')))
 );
 
 writeReportEntry(
@@ -345,7 +345,7 @@ writeReportEntry(
 	"PHP Change Password Script",
 	"http://phppot.com/php/php-change-password-script/",
 	$phpPotPasswordDesc,
-	array_merge($phpPotInjectAndDeprecated, createIssue('password-clear'))
+	array_merge($phpPotInjectAndDeprecated, array(createIssue('password-clear')))
 );
 
 writeReportEntry(
@@ -353,7 +353,7 @@ writeReportEntry(
 	"PHP AJAX Programming",
 	"http://phppot.com/php/ajax-programming-with-php/",
 	$phpPotPasswordDesc,
-	array_merge($phpPotInjectAndDeprecated, createIssue('password-clear'))
+	array_merge($phpPotInjectAndDeprecated, array(createIssue('password-clear')))
 );
 
 //		http://phppot.com/php/php-contact-form/ (email-header-injection, sql-injection, deprecated-library)
