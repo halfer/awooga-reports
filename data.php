@@ -217,6 +217,17 @@ writeReportEntry(
 	'2014-12-21'
 );
 
+// Found here: https://stackoverflow.com/questions/27606706/how-to-create-my-own-json-php-link
+writeReportEntry(
+	'reports/2014-12-22-dipinkrishna.json',
+	"iOS Login and Signup Screen tutorial : Swift + XCode 6 + iOS 8 + JSON",
+	"http://dipinkrishna.com/blog/2014/07/login-signup-screen-tutorial-xcode-6-swift-ios-8-json/",
+	"Remarkably, the PHP API code uses parameterisation via the MySQLi engine, and so at first glance is safe with regards to SQL injection. However the self-assembly of the JSON response string is risky, and MD5 is no longer regarded as a suitable hash for password storage.",
+	array(
+		createIssue('password-inadequate-hashing'),
+	)
+);
+
 $phpPotGeneralDesc = "A site with a large number of vulnerable scripts, including many that are live on the author's own server.";
 $phpPotInjectionDesc = "This site contains a large number of SQL injections, all or mostly involving the legacy mysql library. Interestingly the [author cites parameterisation as a benefit of MySQLi](http://phppot.com/php/mysql-vs-mysqli-in-php/) elsewhere on the site.";
 $phpPotInjectAndDeprecated = array(

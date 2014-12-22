@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "title": "iOS Login and Signup Screen tutorial : Swift + XCode 6 + iOS 8 + JSON",
+    "url": "http:\/\/dipinkrishna.com\/blog\/2014\/07\/login-signup-screen-tutorial-xcode-6-swift-ios-8-json\/",
+    "description": "Remarkably, the PHP API code uses parameterisation via the MySQLi engine, and so at first glance is safe with regards to SQL injection. However the self-assembly of the JSON response string is risky, and MD5 is no longer regarded as a suitable hash for password storage.",
+    "issues": [
+        {
+            "issue_cat_code": "password-inadequate-hashing",
+            "description": null
+        }
+    ]
+}
