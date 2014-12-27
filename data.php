@@ -228,6 +228,17 @@ writeReportEntry(
 	)
 );
 
+writeReportEntry(
+	'reports/2014-12-27-programmerguru.json',
+	"Android MultiCast Push Notifications using GCM [Greeting App]",
+	"http://programmerguru.com/android-tutorial/android-multicast-push-notifications-using-gcm/",
+	"An Android tutorial presenting a PHP/MySQL API with legacy library and SQL injection issues.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),		
+	)
+);
+
 $phpPotGeneralDesc = "A site with a large number of vulnerable scripts, including many that are live on the author's own server.";
 $phpPotInjectionDesc = "This site contains a large number of SQL injections, all or mostly involving the legacy mysql library. Interestingly the [author cites parameterisation as a benefit of MySQLi](http://phppot.com/php/mysql-vs-mysqli-in-php/) elsewhere on the site.";
 $phpPotInjectAndDeprecated = array(

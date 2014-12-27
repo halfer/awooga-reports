@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "title": "Android MultiCast Push Notifications using GCM [Greeting App]",
+    "url": "http:\/\/programmerguru.com\/android-tutorial\/android-multicast-push-notifications-using-gcm\/",
+    "description": "An Android tutorial presenting a PHP\/MySQL API with legacy library and SQL injection issues.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ]
+}
