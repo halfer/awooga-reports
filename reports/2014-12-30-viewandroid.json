@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "title": "Android Spinner MySQL Database Using PHP , JSON Download Source code , Android Spinner Example Tutorial Retrieving Database from sql",
+    "url": "http:\/\/www.viewandroid.com\/2014\/07\/android-spinner-mysql-database-using.html",
+    "description": "Uses a the legacy database library, and new_category.php contains SQL injection flaws. There appears to be no authentication in front of write operations, so it looks like any user on the web can perform them.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ]
+}

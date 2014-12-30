@@ -235,7 +235,18 @@ writeReportEntry(
 	"An Android tutorial presenting a PHP/MySQL API with legacy library and SQL injection issues.",
 	array(
 		createIssue('sql-injection'),
-		createIssue('deprecated-library'),		
+		createIssue('deprecated-library'),
+	)
+);
+
+writeReportEntry(
+	'reports/2014-12-30-viewandroid.json',
+	"Android Spinner MySQL Database Using PHP , JSON Download Source code , Android Spinner Example Tutorial Retrieving Database from sql",
+	"http://www.viewandroid.com/2014/07/android-spinner-mysql-database-using.html",
+	"Uses a the legacy database library, and new_category.php contains SQL injection flaws. There appears to be no authentication in front of write operations, so it looks like any user on the web can perform them.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
 	)
 );
 
