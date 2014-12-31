@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "title": "Android Login and Registration with PHP, MySQL and SQLite",
+    "url": "http:\/\/www.androidhive.info\/2012\/01\/android-login-and-registration-with-php-mysql-and-sqlite\/",
+    "description": "Same security issues as a number of Android API tutorials I've seen.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        },
+        {
+            "issue_cat_code": "password-inadequate-hashing",
+            "description": "SHA1 is no longer considered safe for the purposes of hashing passwords"
+        }
+    ]
+}

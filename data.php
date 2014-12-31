@@ -217,6 +217,18 @@ writeReportEntry(
 	'2014-12-21'
 );
 
+writeReportEntry(
+	'reports/2014-12-31-androidhive.json',
+	"Android Login and Registration with PHP, MySQL and SQLite",
+	"http://www.androidhive.info/2012/01/android-login-and-registration-with-php-mysql-and-sqlite/",
+	"Same security issues as a number of Android API tutorials I've seen.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),		
+		createIssue('password-inadequate-hashing', 'SHA1 is no longer considered safe for the purposes of hashing passwords'),
+	)
+);
+
 // Found here: https://stackoverflow.com/questions/27606706/how-to-create-my-own-json-php-link
 writeReportEntry(
 	'reports/2014-12-22-dipinkrishna.json',
