@@ -407,3 +407,39 @@ writeReportEntry(
 
 // http://www.raywenderlich.com/13541/how-to-create-an-app-like-instagram-with-a-web-service-backend-part-22 (password-clear, sql-needs-parameterisation)
 //   Tweeted here: https://twitter.com/ilovephp/status/541217475804004352, https://twitter.com/ilovephp/status/541217797389701120
+
+writeReportEntry(
+	'reports/2015-01-03-scirra-01.json',
+	"Simple Login using a MySQL database",
+	"https://www.scirra.com/tutorials/525/simple-login-using-a-mysql-database",
+	"SQL injection and unhashed/unsalted user passwords from what looks like an unvetted community coder site. The [author has been notified](https://twitter.com/ilovephp/status/551419237903126529).",
+	array(
+		createIssue('sql-injection'),
+		createIssue('password-clear'),
+	),
+	"2015-01-03"
+);
+
+writeReportEntry(
+	'reports/2015-01-03-scirra-02.json',
+	"Sending info to a mysql database",
+	"https://www.scirra.com/tutorials/296/sending-info-to-a-mysql-database",
+	"The author admits to 'ole trial and error', but nevertheless SQL injection features front and centre. This has been pointed out in the comments, and there is even a promise from the author to fix it, now 2.5 years old.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('deprecated-library'),
+	)
+);
+
+writeReportEntry(
+	'reports/2015-01-03-dev-zone.json',
+	"Login Form Using Ajax and jQuery",
+	"http://www.php-dev-zone.com/2013/07/login-form-using-ajax-and-jquery.html",
+	"Usual complement of SQL injection and unhashed password issues.",
+	array(
+		createIssue('sql-injection'),
+		createIssue('password-clear'),
+		createIssue('deprecated-library'),
+	)
+);
+// @todo Any more in www.php-dev-zone.com to list?

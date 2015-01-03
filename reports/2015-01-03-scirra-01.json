@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "title": "Simple Login using a MySQL database",
+    "url": "https:\/\/www.scirra.com\/tutorials\/525\/simple-login-using-a-mysql-database",
+    "description": "SQL injection and unhashed\/unsalted user passwords from what looks like an unvetted community coder site. The [author has been notified](https:\/\/twitter.com\/ilovephp\/status\/551419237903126529).",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "password-clear",
+            "description": null
+        }
+    ],
+    "author_notified_date": "2015-01-03"
+}

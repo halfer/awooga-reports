@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "title": "Sending info to a mysql database",
+    "url": "https:\/\/www.scirra.com\/tutorials\/296\/sending-info-to-a-mysql-database",
+    "description": "The author admits to 'ole trial and error', but nevertheless SQL injection features front and centre. This has been pointed out in the comments, and there is even a promise from the author to fix it, now 2.5 years old.",
+    "issues": [
+        {
+            "issue_cat_code": "sql-injection",
+            "description": null
+        },
+        {
+            "issue_cat_code": "deprecated-library",
+            "description": null
+        }
+    ]
+}
