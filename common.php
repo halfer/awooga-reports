@@ -4,10 +4,11 @@
  * 
  * @param string $issueCatCode Issue category
  * @param string $description Description in markdown format
+ * @param string $resolvedAt Date of resolution
  * @return array
  * @throws Exception
  */
-function createIssue($issueCatCode, $description = null)
+function createIssue($issueCatCode, $description = null, $resolvedAt = null)
 {
 	// Permitted issues
 	$issueCodes = array(
@@ -24,10 +25,17 @@ function createIssue($issueCatCode, $description = null)
 		throw new Exception('Unrecognised issue code');
 	}
 
-	return array(
-		'issue_cat_code' => $issueCatCode,
-		'description' => $description,
-	);	
+	$issue = array('issue_cat_code' => $issueCatCode, );
+	if ($description && is_string($description))
+	{
+		$issue['description'] = $description;
+	}
+	if ($resolvedAt && is_string($resolvedAt))
+	{
+		$issue['resolved_at'] = $resolvedAt;
+	}
+
+	return $issue;
 }
 
 /**
