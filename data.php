@@ -443,3 +443,21 @@ writeReportEntry(
 	)
 );
 // @todo Any more in www.php-dev-zone.com to list?
+
+// http://www.phpeasystep.com/phptu/24.html
+// http://www.9lessons.info/2013/11/php-email-verification-script.html
+// http://www.infotuts.com/cascaded-dropdown-jquery-ajax-php-mysql/
+// Often many can be found here: http://advancedphptutorial.blogspot.in
+
+// http://www.androidhive.info/2012/05/how-to-connect-android-with-php-mysql
+
+// http://mrbool.com/how-to-create-a-login-page-with-php-and-mysql/28656
+
+// Upload arbitrary file
+// http://www.androidhive.info/2014/12/android-uploading-camera-image-video-to-server-with-progress-bar/
+
+// http://www.formget.com/login-form-in-php/
+// http://codecrawl.com/series/php_form_mysql/
+// http://www.asif18.com/20/php/multiple-insert-update-using-php-mysql-delete-multiple-records-using-checkboxes-in-php/
+// http://www.hotscripts.com/blog/login-php-mysql/
+// http://programmerguru.com/android-tutorial/how-to-sync-sqlite-on-android-to-mysql-db/
