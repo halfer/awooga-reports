@@ -461,3 +461,5 @@ writeReportEntry(
 // http://www.asif18.com/20/php/multiple-insert-update-using-php-mysql-delete-multiple-records-using-checkboxes-in-php/
 // http://www.hotscripts.com/blog/login-php-mysql/
 // http://programmerguru.com/android-tutorial/how-to-sync-sqlite-on-android-to-mysql-db/
+// http://code.tutsplus.com/tutorials/how-to-paginate-data-with-php--net-2928
+// http://www.codeforge.com/read/212346/register.php__html
